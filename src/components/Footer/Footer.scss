@@ -1,0 +1,32 @@
+.footer{
+    background: #f8f8f8;
+    @apply h-full pt-50 pb-30;
+    .footerContainer{
+        @apply flex container justify-between;
+        p{
+            font-size: 13px;
+        }
+        .contacts{
+            @apply col-4 flex flex-col gap-1.5;
+            p{
+                @apply font-medium
+            }
+            a{
+                @apply font-medium
+            }
+        }
+        .socials{
+            @apply flex flex-col col-3 items-end justify-between;
+            .socialsRow{
+                @apply flex gap-25 items-center;
+            }
+            .developed{
+                @apply flex gap-2;
+                p{
+                    font-size: 9px;
+                    @apply font-bold;
+                }
+            }
+        }
+    }
+}

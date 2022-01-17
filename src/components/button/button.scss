@@ -1,0 +1,7 @@
+.linkYellow{
+    background: #FFD200;
+    @apply cursor-pointer flex items-center w-max px-4 text-center rounded-5;
+    a{
+        @apply font-medium;
+    }
+}

@@ -1,0 +1,196 @@
+.MainPage{
+    @apply w-full h-full;
+    .NavigationContainer{
+        @apply flex flex-col items-center mt-25 relative;
+        .contentBanner{
+            background: url(../../assets/images/background.png);
+            @apply flex items-center col-12 bg-cover ;
+            h2{
+                font-size: 53px;
+                line-height: 58px;
+                @apply font-bold mb-15;
+            }
+            .contentContainer{
+                @apply relative container;
+                .filtered{
+                    backdrop-filter: blur(5px);
+                    @apply col-10 xl:col-9 2xl:col-8 absolute h-full right-full -left-1/4;
+                }
+                .subContainer{
+                    min-height: 450px;
+                    @apply col-6 xl:col-5 2xl:col-4 h-full justify-center flex flex-col relative;
+                }
+            }
+        }
+        .newProducts{
+            background: #F8F8F8;
+            @apply w-full;
+            .newproductsContainer{
+                @apply container mt-100 flex flex-wrap mb-100;
+                h2{
+                    font-size: 50px;
+                    @apply font-bold col-12;
+                }
+                .productsContainer{
+                    @apply col-9 flex flex-wrap gap-5;
+                    .product{
+                        width: calc(33.333333333333336% - 19px);
+                        @apply flex flex-col justify-between items-center bg-white rounded-5 py-30 px-5;
+                        img{
+                            max-width: 178px;
+                            max-height: 184px;
+                        }
+                        .textBlock{
+                            min-height: 56px;
+                            @apply flex flex-col gap-2.5 mt-50;
+                            p:nth-child(2){
+                                @apply font-medium;
+                            }
+                        }
+                        .priceBlock{
+                            @apply w-full flex justify-between mt-30 items-center; 
+                            p{
+                                font-size: 21px;
+                                color:#004387;
+                                @apply font-bold;
+                            }
+                        }
+                    }
+                }
+                .bannersContainer{
+                    @apply col-3 h-full flex flex-wrap gap-5;
+                    .banner{
+                        background-color: #00488E;
+                        @apply rounded-5  px-5 py-9 text-white flex flex-col items-center;
+                        .title{
+                            font-size: 34px;
+                            @apply font-bold;
+                        }
+                        .textcont{
+                            @apply font-light;
+                        }
+                        img{
+                            max-width: 223px;
+                            @apply mt-7 mb-5;
+                        }
+                        .linkYellow{
+                            color: #00488E;
+                        }
+                    }
+                }
+            }
+        }
+        .benefits{
+            @apply container mt-80 mb-150;
+            h2{
+                font-size: 50px;
+                @apply font-bold col-12 text-center;
+            }
+            .items{
+                @apply flex flex-wrap gap-y-70 mt-120;
+                .item{
+                    @apply col-4;
+                    img{
+                        background-color: #00488E;
+                        @apply p-5 rounded-5 mb-4;
+                    }
+                    .title{
+                        font-size: 17px;
+                        color: #00488E;
+                        @apply font-bold mb-1.5;
+                    }
+                    .textcont{
+                        @apply col-9;
+                    } 
+                }
+            }
+        }
+        .solving{
+            background: url(../../assets/images/maskBackground.png);
+            @apply bg-cover w-full;
+            .solvingContainer{
+                @apply container mt-60 mb-40 flex flex-col items-center;
+                h2{
+                    font-size: 50px;
+                    @apply text-white font-bold;
+                }
+                .text{
+                    font-size: 14px;
+                    max-width: 600px;
+                    @apply text-white font-light;
+                }
+                .arrows{
+                    @apply flex cursor-pointer;
+                    p{
+                        @apply text-white;
+                    }
+                    img{
+                        @apply h-min mt-auto mb-1.5 ml-1.5;
+                    }
+                }
+                .contentBlock{
+                    @apply flex gap-25 my-80;
+                    .solvingItem{
+                        width: calc(33.333333333333336% - 12.5px);
+                        @apply flex flex-col gap-5 bg-white p-15 rounded-5;
+                        p{
+                            font-size: 14px;
+                            @apply font-medium;
+                        }
+                        a{
+                            color: #00488E;
+                            font-size: 14px;
+                            @apply flex text-center gap-1.5 font-medium;
+                            img{
+                                @apply h-min my-auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .news{
+            background-color: #F8F8F8;
+            @apply w-full;
+            .newsContainer{
+                @apply container my-100;
+                h2{
+                    font-size: 50px;
+                    @apply font-bold text-center;
+                }
+                .newsList{
+                    @apply flex gap-25 mt-50;
+                    .newsItem{
+                        @apply w-full bg-white p-5 rounded-5 flex flex-col gap-2.5;
+                        img{
+                            @apply mb-2;
+                        }
+                        p{
+                            font-size: 14px;
+                            &:nth-child(3){
+                                @apply font-light;
+                            }
+                        }
+                        .row{
+                            @apply flex mt-2.5 justify-between;
+                            p{
+                                @apply w-max opacity-50;
+                            }
+                            a{
+                                color: #004387;
+                                font-size: 14px;
+                                @apply flex w-max gap-1;
+                                img{
+                                    @apply h-min my-auto
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .companies{
+            @apply container flex justify-between mt-90 mb-40;
+        }
+    }
+}
